@@ -16,7 +16,7 @@ module.exports = {
     const userID = "100";
 
     if (!prompt) {
-      return reply('Please provide a question. Usage: gpt [question]');
+      return reply('Please provide a question. Usage: ai3 [question]');
     }
 
     const chill = await new Promise(resolve => {
