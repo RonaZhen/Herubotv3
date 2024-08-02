@@ -2,7 +2,7 @@ const axios = require('axios');
 
 module.exports = {
   config: {
-    name: "gpt",
+    name: "ai3",
     description: "Interact with GPT-4 AI",
     usage: "gpt [prompt]",
     cooldown: 3,
@@ -25,7 +25,7 @@ module.exports = {
       });
     });
 
-    const apiUrl = `https://markdevs69.vercel.app/gpt4?prompt=${encodeURIComponent(prompt)}&uid=${encodeURIComponent(userID)}`;
+    const apiUrl = `https://markdevs-last-api-as2j.onrender.com/gpt4?prompt=${encodeURIComponent(prompt)}&uid=${encodeURIComponent(userID)}`;
 
     try {
       const hot = await axios.get(apiUrl);
